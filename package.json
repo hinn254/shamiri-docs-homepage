@@ -4,8 +4,7 @@
   "description": "Shamiri doc page ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
   },
   "repository": {
     "type": "git",
@@ -13,9 +12,7 @@
   },
   "author": "Benny H Otieno",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hinn254/shamiri-docs-homepage/issues"
-  },
+
   "homepage": "https://hinn254.github.io/shamiri-docs-homepage",
   "dependencies": {
     "gh-pages": "^3.1.0"
