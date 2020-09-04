@@ -1,0 +1,23 @@
+{
+  "name": "shamiri_docs",
+  "version": "1.0.0",
+  "description": "Shamiri doc page ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinn254/shamiri-docs-homepage.git"
+  },
+  "author": "Benny H Otieno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinn254/shamiri-docs-homepage/issues"
+  },
+  "homepage": "https://github.com/hinn254/shamiri-docs-homepage",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

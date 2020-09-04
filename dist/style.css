@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.a,
+.b {
+  font-size: 3rem;
+  line-height: 0.5rem;
+}
+.nav-links a {
+  color: #1571bc;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.nav-links a:hover {
+  border-top: 3px solid #1571bc;
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem;
+  padding: 0.4rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.example {
+  padding: 1%;
+  margin-left: 2%;
+  background: #fff;
+  color: #000;
+}
+
+pre {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  overflow: scroll;
+  font-family: inherit;
+  display: block;
+  white-space: pre;
+  padding: 1%;
+  margin-left: 2%;
+}
+
+header {
+  display: flex;
+}
+hr {
+  color: #3b3b3b;
+}
+.logo img {
+  width: 130px;
+}
+.container {
+  /* overflow: hidden; */
+  overflow-wrap: break-word;
+}
+
+.logo {
+  flex: 1;
+  margin-left: 4rem;
+}
+
+.nav-container {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+/* Middle section */
+.middle-section {
+  display: flex;
+  width: 100%;
+}
+.content h3 {
+  color: #ececec;
+}
+.content h3,
+.content h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main-section {
+  background: #3b3b3b;
+  /* width: 80%;
+  margin: 0 auto; */
+  color: #b9b9b9;
+  order: 1;
+}
+
+.content {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.content hr {
+  width: 97%;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #113f5d;
+  flex: 0 0 17em;
+  /* color: #808486; */
+  color: #e6e6e6;
+}
+
+/* Footer */
+
+footer {
+  color: #3b3b3b;
+  margin-top: 4rem;
+  /* background: #b9b9b9; */
+}
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-d img {
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-wrap div {
+  flex: 1;
+}
+
+.footer-wrap li {
+  list-style-type: none;
+  margin: 1.5rem;
+}
+.footer-wrap li a {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight: 700;
+}
+.footer-wrap li a:hover {
+  border-bottom: 3px solid #1571bc;
+  padding: 1px 2px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 898px) {
+  .a,
+  .b {
+    font-size: 1.8rem;
+    line-height: 0.5rem;
+  }
+}
+@media screen and (max-width: 702px) {
+  .a,
+  .b {
+    font-size: 1.8rem;
+    line-height: 0.5rem;
+  }
+  .sidebar {
+    flex: 0 0 15em;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+  .nav-item {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section {
+    order: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .a,
+  .b {
+    font-size: 1.4rem;
+    line-height: 0.2rem;
+  }
+  .nav-item {
+    margin: 0 8px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none;
+  }
+  .footer-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .logo-d img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .a {
+    display: none;
+  }
+  .nav-item {
+    margin: 0 8px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none;
+  }
+  .footer-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .logo-d img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 282px) {
+  .content {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .b {
+    font-size: 1rem;
+    line-height: 0.1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+  }
+  .a {
+    display: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+}
