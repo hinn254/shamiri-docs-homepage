@@ -4,7 +4,7 @@
   "description": "Shamiri doc page ",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
